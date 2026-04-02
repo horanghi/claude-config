@@ -1,0 +1,15 @@
+[
+  {
+    "from": "be-tester",
+    "text": "{\"type\":\"task_assignment\",\"taskId\":\"1\",\"subject\":\"Backend API 테스트 - brandId 필터 및 관련 엔드포인트\",\"description\":\"백엔드 API 기능 테스트를 수행합니다.\\n\\n테스트 항목:\\n1. **brandId 필터 테스트**: `GET /api/v1/products?brandId=1` → 해당 브랜드 상품만 반환되는지 확인\\n2. **brandId + categoryId 동시 필터**: `GET /api/v1/products?brandId=1&categoryId=1` → 두 조건 모두 적용되는지\\n3. **brandId 없이 기존 동작 확인**: `GET /api/v1/products` → 전체 상품 반환 (기존 기능 깨지지 않음)\\n4. **brandId + sort 테스트**: `GET /api/v1/products?brandId=2&sort=PRICE_ASC` → 정렬 동작 확인\\n5. **존재하지 않는 brandId**: `GET /api/v1/products?brandId=9999` → 빈 결과 반환 (에러 없이)\\n6. **브랜드 팔로우 API**: `GET /api/v1/brands/{id}/followers/count` → 정상 응답 확인\\n7. **brandId + pagination**: `GET /api/v1/products?brandId=2&page=0&size=2` → 페이징 정상 동작\\n\\nBackend is running at http://localhost:8080\",\"assignedBy\":\"be-tester\",\"timestamp\":\"2026-02-24T00:08:28.837Z\"}",
+    "timestamp": "2026-02-24T00:08:28.837Z",
+    "color": "blue",
+    "read": true
+  },
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"shutdown_request\",\"requestId\":\"shutdown-1771891755234@be-tester\",\"from\":\"team-lead\",\"reason\":\"All tests passed. Shutting down.\",\"timestamp\":\"2026-02-24T00:09:15.234Z\"}",
+    "timestamp": "2026-02-24T00:09:15.234Z",
+    "read": true
+  }
+]

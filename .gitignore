@@ -1,0 +1,36 @@
+# Secrets - NEVER commit
+settings.json
+settings.local.json
+mcp-needs-auth-cache.json
+history.jsonl
+
+# Session/cache data
+sessions/
+projects/
+cache/
+plugins/
+debug/
+file-history/
+shell-snapshots/
+session-env/
+todos/
+tasks/
+statsig/
+telemetry/
+backups/
+paste-cache/
+downloads/
+ide/
+plans/
+
+# Skills are independent git repos - manage via skills-list.txt
+skills/
+
+# Metrics
+metrics/
+
+# Homunculus
+homunculus/
+
+# OS files
+.DS_Store

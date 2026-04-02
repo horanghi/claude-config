@@ -1,0 +1,99 @@
+{
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1",
+    "GITHUB_PERSONAL_ACCESS_TOKEN": "<YOUR_GITHUB_TOKEN>"
+  },
+  "permissions": {
+    "allow": [
+      "Edit",
+      "MultiEdit",
+      "Bash(npm run lint)",
+      "Bash(npm run test:*)",
+      "Bash(git *)",
+      "mcp__pencil"
+    ],
+    "deny": [
+      "Bash(rm -rf *)"
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash /Users/jude/.claude/statusline-command.sh"
+  },
+  "enabledPlugins": {
+    "document-skills@anthropic-agent-skills": true,
+    "github@claude-plugins-official": true,
+    "atlassian@claude-plugins-official": true,
+    "figma@claude-plugins-official": true,
+    "superpowers@claude-plugins-official": true,
+    "claude-mem@thedotmack": true,
+    "rust-analyzer-lsp@claude-plugins-official": true,
+    "playwright-skill@playwright-skill": true,
+    "ralph-loop@claude-plugins-official": false,
+    "frontend-design@claude-plugins-official": true,
+    "everything-claude-code@everything-claude-code": true,
+    "swift-lsp@claude-plugins-official": true,
+    "biz-harness@biz-harness": true
+  },
+  "extraKnownMarketplaces": {
+    "claude-code-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/claude-code"
+      }
+    },
+    "everything-claude-code": {
+      "source": {
+        "source": "github",
+        "repo": "affaan-m/everything-claude-code"
+      }
+    },
+    "biz-harness": {
+      "source": {
+        "source": "github",
+        "repo": "GyumanCho/biz-harness"
+      }
+    }
+  },
+  "skipDangerousModePermissionPrompt": true,
+  "mcpServers": {
+    "link30db-ro": {
+      "command": "node",
+      "args": [
+        "/Users/jude/projects/work/link30db-ro-mcp/dist/index.js"
+      ],
+      "env": {
+        "DB_HOST": "<DB_HOST>",
+        "DB_PORT": "3306",
+        "DB_USER": "<DB_USER>",
+        "DB_PASSWORD": "<DB_PASSWORD>",
+        "DB_NAME": "<DB_NAME>"
+      }
+    },
+    "shopby": {
+      "command": "node",
+      "args": [
+        "/Users/jude/jamiebot/jamiebot-shopby-mcp/index.js"
+      ],
+      "env": {
+        "SHOPBY_SYSTEM_KEY": "<SHOPBY_SYSTEM_KEY>",
+        "SHOPBY_ACCESS_TOKEN": "<SHOPBY_ACCESS_TOKEN>"
+      }
+    },
+    "bigquery": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-bigquery"
+      ],
+      "env": {
+        "BIGQUERY_PROJECT": "an3-prod-data",
+        "BIGQUERY_LOCATION": "asia-northeast3"
+      }
+    }
+  },
+  "allowedTools": [
+    "Bash(git*)",
+    "Bash(npm*)"
+  ],
+  "teammateMode": "tmux"
+}

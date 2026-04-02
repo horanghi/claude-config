@@ -1,0 +1,15 @@
+[
+  {
+    "from": "fe-tester",
+    "text": "{\"type\":\"task_assignment\",\"taskId\":\"2\",\"subject\":\"Frontend 기능 테스트 - 브랜드관 페이지 및 Pick 캐시\",\"description\":\"프론트엔드 기능 테스트를 수행합니다.\\n\\n테스트 항목:\\n1. **브랜드관 페이지 빌드 확인**: `/brands/[id]` 라우트가 빌드에 포함되는지\\n2. **브랜드관 페이지 컴포넌트 검증**: `frontend/app/(main)/brands/[id]/page.tsx` 코드 검증\\n   - useSearchParams로 name 쿼리 파라미터 수신\\n   - useProducts 훅에 brandId 전달\\n   - 무한스크롤 IntersectionObserver 구현\\n   - 팔로우/언팔로우 버튼 존재\\n   - Suspense 바운더리 래핑\\n3. **Pick 페이지 브랜드 링크 확인**: `frontend/app/(main)/pick/page.tsx`에서 브랜드 클릭 시 `/brands/{id}?name=...` 으로 이동하는 Link 컴포넌트 확인\\n4. **ProductCard 캐시 무효화 확인**: `frontend/components/product/ProductCard.tsx`에서 pick 토글 후 `queryClient.invalidateQueries({ queryKey: ['picks'] })` 호출 확인\\n5. **useProducts 훅 brandId 지원 확인**: `frontend/lib/hooks/useProducts.ts`에서 brandId 파라미터 포함 확인\\n6. **products API brandId 지원 확인**: `frontend/lib/api/products.ts`에서 brandId 파라미터 포함 확인\\n\\nFrontend is running at http://localhost:3000\",\"assignedBy\":\"fe-tester\",\"timestamp\":\"2026-02-24T00:08:31.889Z\"}",
+    "timestamp": "2026-02-24T00:08:31.889Z",
+    "color": "green",
+    "read": true
+  },
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"shutdown_request\",\"requestId\":\"shutdown-1771891755802@fe-tester\",\"from\":\"team-lead\",\"reason\":\"All tests passed. Shutting down.\",\"timestamp\":\"2026-02-24T00:09:15.802Z\"}",
+    "timestamp": "2026-02-24T00:09:15.802Z",
+    "read": true
+  }
+]

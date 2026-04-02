@@ -1,0 +1,96 @@
+[
+  {
+    "from": "erd-worker-2",
+    "text": "Task #2 completed. Updated DATABASE_ERD_MERMAID.md with all missing entities:\n\n**New sections added:**\n- Section 6-1: BarJu (6 entities) + EMP (3 entities) — order/logistics domain\n- Section 8-1: CashRefund, CsTemplate, CsGroupProcessHistory — CRM additions\n- Section 13: PopularKeywordDeployHistory — keyword domain\n- Section 14: CalendarEntity — calendar domain\n- Section 15: LinkAdminConfigurations — system config domain\n\n**Existing sections updated:**\n- Section 1 (overview): Added 11 new relationship rows and diagram connections\n- Section 4 (Partner): Added 11 entities — PartnerCsReport, PartnerDailyReport, PartnerDeliveryReport, PartnerGoodsReport, PartnerReport, PartnerMemoDashboard, PartnerOrderDelayMemo, PartnerSmsSendHistory, PartnerSmsSendPolicy, PartnerStatIndicatorsManageHistory, PartnerStatIndicatorsStds\n- Section 9 (Settlement): Expanded PurchaseAmountItems fields, added PurchaseAmountDeposit and PurchaseAmountMonthlyMemo\n\nAll FK relationships verified against actual @ManyToOne annotations in entity code. Mermaid syntax is consistent throughout.",
+    "summary": "Task #2 completed — ERD Mermaid doc updated with all missing entities",
+    "timestamp": "2026-03-06T06:22:43.154Z",
+    "color": "green",
+    "read": true
+  },
+  {
+    "from": "erd-worker-2",
+    "text": "{\"type\":\"idle_notification\",\"from\":\"erd-worker-2\",\"timestamp\":\"2026-03-06T06:22:46.706Z\",\"idleReason\":\"available\"}",
+    "timestamp": "2026-03-06T06:22:46.706Z",
+    "color": "green",
+    "read": true
+  },
+  {
+    "from": "erd-worker-2",
+    "text": "{\"type\":\"idle_notification\",\"from\":\"erd-worker-2\",\"timestamp\":\"2026-03-06T06:22:51.201Z\",\"idleReason\":\"available\"}",
+    "timestamp": "2026-03-06T06:22:51.201Z",
+    "color": "green",
+    "read": true
+  },
+  {
+    "from": "erd-worker-1",
+    "text": "Task #1 completed. DATABASE_ERD.md has been updated with all missing entities and corrections:\n\n**Added to Partner section (11 entities):**\n- PartnerCsReport, PartnerDailyReport, PartnerDeliveryReport, PartnerGoodsReport, PartnerReport\n- PartnerMemoDashboard, PartnerOrderDelayMemo\n- PartnerSmsSendHistory, PartnerSmsSendPolicy\n- PartnerStatIndicatorsManageHistory (+ PartnerManageIndicators collection table), PartnerStatIndicatorsStds\n\n**Added to Order section (9 entities):**\n- BarJuReady, BarJuReadyError, BarJuProgress, BarJuHistory, BarJuConvertError, BarJuDispatchError\n- EmpLocation, EmpMatchingProduct, EmpProductCodeTemp\n\n**Added to CRM section (7 entities):**\n- ProductInquiry, ProductInquiryAnswer, ProductInquiryOrder, ProductInquiryOrderOption\n- CashRefund, CsTemplate, CsGroupProcessHistory\n\n**Added to Settlement section (2 entities):**\n- PurchaseAmountDeposit, PurchaseAmountMonthlyMemo\n- Also added missing validDateKind and purchaseAmountId FK to PurchaseAmountItems\n\n**Added to 기타 운영 section (3 entities with full schemas):**\n- Calendar, PopularKeywordDeployHistory, LinkAdminConfigurations\n\n**Enum section enhanced:**\n- Order: BarJuPeriodKind, BarJuHistoryKind, BarJuProcessKind, LogisticsPackageKind, LogisticsLocationKind\n- CRM: ProductInquiryDisplayStatusKind, CashRefundStatus, CsTemplateCategory, CsTemplateKind, CsGroupProcessHistoryKind, MentionedKind\n- Settlement: PurchaseAmountStatus, PurchaseAmountDepositStatus, RejectionReason\n- Partner: PartnerSmsSendPolicyKind, PartnerSmsSendResultKind, PartnerStatIndicatorsActionTakenKind, PartnerStatIndicatorsManageIndicatorsKind\n\n**Other fixes:**\n- Split combined column notations (e.g. `unitCnt/boxCnt/pieceCnt` → separate rows)\n- Split `viewCount/purchaseCount`, `revenueRate/discountRate`, `totalSales/totalProfit` into separate rows\n- Updated logical FK reference table (17-10) with all new entity relationships\n- Cross-referenced BarJu/Emp summary tables to detailed schemas in Order section",
+    "summary": "Task #1 completed - DATABASE_ERD.md updated with 32+ entities",
+    "timestamp": "2026-03-06T06:24:36.351Z",
+    "color": "blue",
+    "read": true
+  },
+  {
+    "from": "erd-worker-1",
+    "text": "{\"type\":\"idle_notification\",\"from\":\"erd-worker-1\",\"timestamp\":\"2026-03-06T06:24:39.790Z\",\"idleReason\":\"available\"}",
+    "timestamp": "2026-03-06T06:24:39.790Z",
+    "color": "blue",
+    "read": true
+  },
+  {
+    "from": "erd-worker-1",
+    "text": "{\"type\":\"idle_notification\",\"from\":\"erd-worker-1\",\"timestamp\":\"2026-03-06T06:24:49.519Z\",\"idleReason\":\"available\"}",
+    "timestamp": "2026-03-06T06:24:49.519Z",
+    "color": "blue",
+    "read": true
+  },
+  {
+    "from": "erd-worker-2",
+    "text": "{\"type\":\"shutdown_approved\",\"requestId\":\"shutdown-1772778294322@erd-worker-2\",\"from\":\"erd-worker-2\",\"timestamp\":\"2026-03-06T06:24:57.375Z\",\"paneId\":\"%4\",\"backendType\":\"tmux\"}",
+    "timestamp": "2026-03-06T06:24:57.375Z",
+    "color": "green",
+    "read": true
+  },
+  {
+    "from": "erd-worker-1",
+    "text": "{\"type\":\"idle_notification\",\"from\":\"erd-worker-1\",\"timestamp\":\"2026-03-06T06:24:58.686Z\",\"idleReason\":\"available\",\"summary\":\"[to erd-worker-1] Task #1 already completed by me earlier\"}",
+    "timestamp": "2026-03-06T06:24:58.686Z",
+    "color": "blue",
+    "read": true
+  },
+  {
+    "from": "erd-worker-1",
+    "text": "{\"type\":\"shutdown_approved\",\"requestId\":\"shutdown-1772778294563@erd-worker-1\",\"from\":\"erd-worker-1\",\"timestamp\":\"2026-03-06T06:25:02.367Z\",\"paneId\":\"%3\",\"backendType\":\"tmux\"}",
+    "timestamp": "2026-03-06T06:25:02.367Z",
+    "color": "blue",
+    "read": true
+  },
+  {
+    "from": "erd-worker-3",
+    "text": "Task #3 completed. ERD_VERIFICATION.md has been fully updated:\n\n**What was done:**\n1. **Verification summary table** updated — now shows 70 ERD entities + 77 Mermaid entities (7 Mermaid-only)\n2. **Full entity verification list** added — all 77 entities across 10 domains with ERD/Mermaid/DB verification status\n3. **All 32 newly added entities** documented with domain breakdown (Partner 11, Order 9, CRM 7, Settlement 2, 기타 3)\n4. **18 new Enums** listed with usage locations\n5. **ERD ↔ Mermaid cross-verification** — identified 7 entities with Mermaid column definitions but no ERD ### section (ClaimImageUrl, DirectInquiryAnswer, DirectInquiryOrder, DirectInquiryOrderOption, CsIntegrationOrderOption, ExternalCsIntegration, ExternalCsIntegrationProduct)\n6. **Remaining gaps** documented: (a) 7 ERD column-definition gaps, (b) row counts missing for new entities, (c) CalendarEntity vs Calendar naming inconsistency, (d) @ElementCollection table note\n7. **Change history** table added with 4 entries for all 2026-03-06 modifications\n8. **Reviewed 3 times** — fixed domain count headers (Partner 13→14, CRM 17→20, Settlement 6→7) during review passes\n\nNo remaining tasks in the queue.",
+    "summary": "Task #3 done: ERD_VERIFICATION.md fully updated",
+    "timestamp": "2026-03-06T06:29:22.527Z",
+    "color": "yellow",
+    "read": true
+  },
+  {
+    "from": "erd-worker-3",
+    "text": "{\"type\":\"idle_notification\",\"from\":\"erd-worker-3\",\"timestamp\":\"2026-03-06T06:29:26.422Z\",\"idleReason\":\"available\"}",
+    "timestamp": "2026-03-06T06:29:26.422Z",
+    "color": "yellow",
+    "read": true
+  },
+  {
+    "from": "erd-worker-3",
+    "text": "{\"type\":\"idle_notification\",\"from\":\"erd-worker-3\",\"timestamp\":\"2026-03-06T06:29:30.444Z\",\"idleReason\":\"available\"}",
+    "timestamp": "2026-03-06T06:29:30.444Z",
+    "color": "yellow",
+    "read": true
+  },
+  {
+    "from": "erd-worker-3",
+    "text": "{\"type\":\"shutdown_approved\",\"requestId\":\"shutdown-1772778567901@erd-worker-3\",\"from\":\"erd-worker-3\",\"timestamp\":\"2026-03-06T06:29:33.675Z\",\"paneId\":\"%5\",\"backendType\":\"tmux\"}",
+    "timestamp": "2026-03-06T06:29:33.675Z",
+    "color": "yellow",
+    "read": true
+  }
+]

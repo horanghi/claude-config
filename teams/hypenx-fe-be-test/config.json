@@ -1,0 +1,19 @@
+{
+  "name": "hypenx-fe-be-test",
+  "description": "HypenX FE/BE 기능 테스트 - 백엔드 API 검증 및 프론트엔드 UI/기능 검증을 병렬로 수행",
+  "createdAt": 1771891818986,
+  "leadAgentId": "team-lead@hypenx-fe-be-test",
+  "leadSessionId": "dd589842-242f-48a6-a4ba-f7a74d95ab2f",
+  "members": [
+    {
+      "agentId": "team-lead@hypenx-fe-be-test",
+      "name": "team-lead",
+      "agentType": "team-lead",
+      "model": "claude-opus-4-6",
+      "joinedAt": 1771891818986,
+      "tmuxPaneId": "",
+      "cwd": "/Users/jude/claude/jamiebot-hypenx",
+      "subscriptions": []
+    }
+  ]
+}

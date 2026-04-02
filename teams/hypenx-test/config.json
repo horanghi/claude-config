@@ -1,0 +1,47 @@
+{
+  "name": "hypenx-test",
+  "description": "HYPENX FE/BE 기능 테스트 - 브랜드관, Pick 캐시, brandId 필터 API",
+  "createdAt": 1771891674047,
+  "leadAgentId": "team-lead@hypenx-test",
+  "leadSessionId": "fd4c736a-5f46-4214-9621-595c49ea0e8c",
+  "members": [
+    {
+      "agentId": "team-lead@hypenx-test",
+      "name": "team-lead",
+      "agentType": "team-lead",
+      "model": "claude-opus-4-6",
+      "joinedAt": 1771891674047,
+      "tmuxPaneId": "",
+      "cwd": "/Users/jude/claude/jamiebot-hypenx/backend",
+      "subscriptions": []
+    },
+    {
+      "agentId": "be-tester@hypenx-test",
+      "name": "be-tester",
+      "agentType": "Bash",
+      "model": "opus",
+      "prompt": "You are the backend tester for the hypenx-test team. Your name is \"be-tester\".\n\nRead your task from TaskGet (task #1), mark it in_progress, then execute all the test cases.\n\nThe backend is running at http://localhost:8080. Use curl to test each API endpoint.\n\nFor each test case:\n1. Run the curl command\n2. Verify the response\n3. Report PASS or FAIL with details\n\nAfter all tests, mark the task as completed and send a summary message to \"team-lead\" with the results.\n\nIMPORTANT: Use `curl -s` and pipe through `python3 -m json.tool` for readable output. Always quote URLs with & in them.",
+      "color": "blue",
+      "planModeRequired": false,
+      "joinedAt": 1771891702609,
+      "tmuxPaneId": "in-process",
+      "cwd": "/Users/jude/claude/jamiebot-hypenx/backend",
+      "subscriptions": [],
+      "backendType": "in-process"
+    },
+    {
+      "agentId": "fe-tester@hypenx-test",
+      "name": "fe-tester",
+      "agentType": "general-purpose",
+      "model": "opus",
+      "prompt": "You are the frontend tester for the hypenx-test team. Your name is \"fe-tester\".\n\nRead your task from TaskGet (task #2), mark it in_progress, then execute all the test cases.\n\nFor each test case, READ the actual source files and verify the code meets the requirements. Use Read tool to check each file.\n\nFiles to verify:\n- /Users/jude/claude/jamiebot-hypenx/frontend/app/(main)/brands/[id]/page.tsx\n- /Users/jude/claude/jamiebot-hypenx/frontend/app/(main)/pick/page.tsx\n- /Users/jude/claude/jamiebot-hypenx/frontend/components/product/ProductCard.tsx\n- /Users/jude/claude/jamiebot-hypenx/frontend/lib/hooks/useProducts.ts\n- /Users/jude/claude/jamiebot-hypenx/frontend/lib/api/products.ts\n\nFor each test case:\n1. Read the relevant file\n2. Verify the code contains the expected implementation\n3. Report PASS or FAIL with line number references\n\nAfter all tests, mark the task as completed and send a summary message to \"team-lead\" with the results.",
+      "color": "green",
+      "planModeRequired": false,
+      "joinedAt": 1771891706885,
+      "tmuxPaneId": "in-process",
+      "cwd": "/Users/jude/claude/jamiebot-hypenx/backend",
+      "subscriptions": [],
+      "backendType": "in-process"
+    }
+  ]
+}

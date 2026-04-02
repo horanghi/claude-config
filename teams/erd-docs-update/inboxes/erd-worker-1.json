@@ -1,0 +1,35 @@
+[
+  {
+    "from": "team-lead",
+    "text": "You are assigned Task #1: Update DATABASE_ERD.md with missing entities and corrections.\n\n## Your task\nRead all JPA Entity files under `src/main/java/com/fimasia/linkbe/biz/` and update `docs/DATABASE_ERD.md` to add missing entities and fix inconsistencies.\n\n## Step-by-step instructions\n\n### Phase 1: Read existing document\n1. Read `docs/DATABASE_ERD.md` fully to understand its current structure and style\n\n### Phase 2: Read ALL entity files to get accurate field names/types/annotations\nRead every entity file in these directories:\n- `src/main/java/com/fimasia/linkbe/biz/crm/model/productinquiry/entity/` (ProductInquiry, ProductInquiryAnswer, ProductInquiryOrder, ProductInquiryOrderOption)\n- `src/main/java/com/fimasia/linkbe/biz/crm/model/cashRefund/entity/` (CashRefund)\n- `src/main/java/com/fimasia/linkbe/biz/crm/model/cstemplate/entity/` (CsTemplate)\n- `src/main/java/com/fimasia/linkbe/biz/crm/model/csprocesshistory/entity/` (CsGroupProcessHistory)\n- `src/main/java/com/fimasia/linkbe/biz/purchaseAmountManage/model/entity/` (PurchaseAmount, PurchaseAmountDeposit, PurchaseAmountItems, PurchaseAmountMonthlyMemo)\n- `src/main/java/com/fimasia/linkbe/biz/keyword/model/entity/` (PopularKeywordDeployHistory)\n- `src/main/java/com/fimasia/linkbe/biz/orchestration/model/entity/` (Calendar)\n- `src/main/java/com/fimasia/linkbe/biz/linkAdminConfiguration/model/entity/` (LinkAdminConfiguration)\n- `src/main/java/com/fimasia/linkbe/biz/order/model/entity/` (BarJuReady, BarJuReadyError, BarJuProgress, BarJuHistory, BarJuConvertError, BarJuDispatchError, EmpLocation, EmpProductCodeTemp, EmpMatchingProduct)\n- `src/main/java/com/fimasia/linkbe/biz/partner/model/entity/` (ALL partner entities — PartnerCsReport, PartnerDailyReport, PartnerDeliveryReport, PartnerGoodsReport, PartnerReport, PartnerMemoDashboard, PartnerOrderDelayMemo, PartnerSmsSendHistory, PartnerSmsSendPolicy, PartnerStatIndicatorsManageHistory, PartnerStatIndicatorsStds)\n\n### Phase 3: Edit DATABASE_ERD.md\nFor each missing entity/domain:\n1. Match the existing document's table format exactly (Korean comments, column types, constraints)\n2. Add ProductInquiry 4 entities with full column schema to the CRM section\n3. Add new domain sections for: PurchaseAmount (매입관리), Keyword (인기검색어), Calendar (캘린더), LinkAdminConfiguration (설정)\n4. Add BarJu series and Emp* entities to the Order section\n5. Add CashRefund, CsTemplate, CsGroupProcessHistory to CRM section\n6. Add all missing Partner report entities to the Partner section\n7. Unify any column range notation (`/` and `~` → separate rows)\n8. Enhance Enum section if needed (add missing enum values found in entity code)\n\n### Phase 4: 3-pass review\nAfter all edits:\n1. Read the full document again. Check every entity against the actual code. Fix any discrepancies.\n2. Read again. Check formatting consistency, table alignment, Korean comments.\n3. Read one final time. Ensure no entities are still missing.\n\n## Important rules\n- Maintain existing document style exactly\n- Use actual field names from @Column annotations, not Java field names (if they differ)\n- Include @Table(name=...) values as the table names\n- Do NOT modify drawdb-erd.sql\n- Mark Task #1 as completed when done using TaskUpdate",
+    "timestamp": "2026-03-06T06:17:19.049Z",
+    "read": true
+  },
+  {
+    "from": "erd-worker-1",
+    "text": "{\"type\":\"task_assignment\",\"taskId\":\"1\",\"subject\":\"Update DATABASE_ERD.md with missing entities and corrections\",\"description\":\"Read all JPA Entity files and update docs/DATABASE_ERD.md:\\n1. Add ProductInquiry/ProductInquiryAnswer/ProductInquiryOrder/ProductInquiryOrderOption full column schema (Section 8 CRM)\\n2. Add missing domain sections: PurchaseAmount (매입관리), Keyword (인기검색어), Calendar, LinkAdminConfiguration\\n3. Add missing entities: BarJu series (BarJuReady, BarJuReadyError, BarJuProgress, BarJuHistory, BarJuConvertError, BarJuDispatchError), EmpLocation/EmpProductCodeTemp/EmpMatchingProduct, CashRefund, CsTemplate, CsGroupProcessHistory\\n4. Add Partner report entities (PartnerCsReport, PartnerDailyReport, PartnerDeliveryReport, PartnerGoodsReport, PartnerReport, PartnerMemoDashboard, PartnerOrderDelayMemo, PartnerSmsSendHistory, PartnerSmsSendPolicy, PartnerStatIndicatorsManageHistory, PartnerStatIndicatorsStds)\\n5. Unify column range notation (/ and ~ → individual rows)\\n6. Add ProductInquiry related table row counts\\n7. Enhance Enum section (add missing enum values)\\n8. Review full document 3 times after changes, fix any remaining issues each time\",\"assignedBy\":\"erd-worker-1\",\"timestamp\":\"2026-03-06T06:17:29.172Z\"}",
+    "timestamp": "2026-03-06T06:17:29.173Z",
+    "color": "blue",
+    "read": true
+  },
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"shutdown_request\",\"requestId\":\"shutdown-1772778294563@erd-worker-1\",\"from\":\"team-lead\",\"reason\":\"Your task is complete. Please shut down.\",\"timestamp\":\"2026-03-06T06:24:54.563Z\"}",
+    "timestamp": "2026-03-06T06:24:54.563Z",
+    "read": true
+  },
+  {
+    "from": "erd-worker-1",
+    "text": "Task #1 was already completed by me earlier in this session. I am erd-worker-1. The DATABASE_ERD.md has been fully updated with all requested changes (32+ entities, enums, column fixes, FK references). The task is marked as completed.",
+    "summary": "Task #1 already completed by me earlier",
+    "timestamp": "2026-03-06T06:24:55.924Z",
+    "color": "blue",
+    "read": true
+  },
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"shutdown_request\",\"requestId\":\"shutdown-1772778305355@erd-worker-1\",\"from\":\"team-lead\",\"reason\":\"All done, please shut down now.\",\"timestamp\":\"2026-03-06T06:25:05.355Z\"}",
+    "timestamp": "2026-03-06T06:25:05.355Z",
+    "read": false
+  }
+]

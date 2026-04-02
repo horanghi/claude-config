@@ -1,0 +1,21 @@
+[
+  {
+    "from": "team-lead",
+    "text": "You are assigned Task #3: Update ERD_VERIFICATION.md with correction records.\n\n## Context\nTasks 1 and 2 have been completed. Here's what was changed:\n\n### DATABASE_ERD.md changes (Task #1):\n**Added to Partner section (11 entities):**\n- PartnerCsReport, PartnerDailyReport, PartnerDeliveryReport, PartnerGoodsReport, PartnerReport\n- PartnerMemoDashboard, PartnerOrderDelayMemo\n- PartnerSmsSendHistory, PartnerSmsSendPolicy\n- PartnerStatIndicatorsManageHistory (+ PartnerManageIndicators collection table), PartnerStatIndicatorsStds\n\n**Added to Order section (9 entities):**\n- BarJuReady, BarJuReadyError, BarJuProgress, BarJuHistory, BarJuConvertError, BarJuDispatchError\n- EmpLocation, EmpMatchingProduct, EmpProductCodeTemp\n\n**Added to CRM section (7 entities):**\n- ProductInquiry, ProductInquiryAnswer, ProductInquiryOrder, ProductInquiryOrderOption\n- CashRefund, CsTemplate, CsGroupProcessHistory\n\n**Added to Settlement section (2 entities):**\n- PurchaseAmountDeposit, PurchaseAmountMonthlyMemo\n\n**Added to 기타 운영 section (3 entities):**\n- Calendar, PopularKeywordDeployHistory, LinkAdminConfigurations\n\n**Enum section enhanced:** BarJuPeriodKind, BarJuHistoryKind, BarJuProcessKind, LogisticsPackageKind, LogisticsLocationKind, ProductInquiryDisplayStatusKind, CashRefundStatus, CsTemplateCategory, CsTemplateKind, CsGroupProcessHistoryKind, MentionedKind, PurchaseAmountStatus, PurchaseAmountDepositStatus, RejectionReason, PartnerSmsSendPolicyKind, PartnerSmsSendResultKind, PartnerStatIndicatorsActionTakenKind, PartnerStatIndicatorsManageIndicatorsKind\n\n**Other fixes:** Split combined column notations, updated logical FK reference table\n\n### DATABASE_ERD_MERMAID.md changes (Task #2):\n**New sections:** Section 6-1 (BarJu+EMP), Section 8-1 (CRM additions), Section 13 (Keyword), Section 14 (Calendar), Section 15 (LinkAdminConfig)\n**Updated sections:** Section 1 (overview +11 relationships), Section 4 (Partner +11 entities), Section 9 (Settlement expanded)\n\n## Your task\n1. Read `docs/ERD_VERIFICATION.md` fully\n2. Read `docs/DATABASE_ERD.md` and `docs/DATABASE_ERD_MERMAID.md` to understand current state\n3. Update ERD_VERIFICATION.md:\n   a. Update the verification summary table — add all 32+ newly documented entities, mark them as verified\n   b. Record all newly added domains (PurchaseAmount deposits/memo, Keyword, Calendar, LinkAdminConfiguration)\n   c. Add a modification history entry for 2026-03-06 documenting all changes made\n   d. Update Entity-DB mapping issues section — note any remaining discrepancies or mark resolved items\n   e. Cross-verify that every entity in DATABASE_ERD.md has a corresponding Mermaid diagram and vice versa\n   f. Note any remaining gaps between the 3 documents\n4. Review the full document 3 times after changes\n5. Mark Task #3 as completed using TaskUpdate when done\n\n## Important rules\n- Maintain existing document style and format\n- Be precise about entity counts and names\n- Korean comments where the existing document uses them",
+    "timestamp": "2026-03-06T06:24:53.897Z",
+    "read": true
+  },
+  {
+    "from": "erd-worker-3",
+    "text": "{\"type\":\"task_assignment\",\"taskId\":\"3\",\"subject\":\"Update ERD_VERIFICATION.md with correction records\",\"description\":\"After Unit 1 and Unit 2 are complete, update docs/ERD_VERIFICATION.md:\\n1. Update verification summary table to reflect all additions from Unit 1 and Unit 2\\n2. Record all newly added domains/entities\\n3. Add modification history section entry for this update\\n4. Update Entity-DB mapping issues section\\n5. Cross-verify consistency with DATABASE_ERD.md and DATABASE_ERD_MERMAID.md\\n6. Review full document 3 times after changes\\n\\nNOTE: This task is blocked by Unit 1 and Unit 2 completion. Wait for both to finish before starting.\",\"assignedBy\":\"erd-worker-3\",\"timestamp\":\"2026-03-06T06:25:04.750Z\"}",
+    "timestamp": "2026-03-06T06:25:04.750Z",
+    "color": "yellow",
+    "read": true
+  },
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"shutdown_request\",\"requestId\":\"shutdown-1772778567901@erd-worker-3\",\"from\":\"team-lead\",\"reason\":\"Task complete. Please shut down.\",\"timestamp\":\"2026-03-06T06:29:27.901Z\"}",
+    "timestamp": "2026-03-06T06:29:27.901Z",
+    "read": true
+  }
+]

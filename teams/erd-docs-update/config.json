@@ -1,0 +1,19 @@
+{
+  "name": "erd-docs-update",
+  "description": "Update 3 ERD documents (DATABASE_ERD.md, DATABASE_ERD_MERMAID.md, ERD_VERIFICATION.md) based on actual JPA Entity code",
+  "createdAt": 1772777785133,
+  "leadAgentId": "team-lead@erd-docs-update",
+  "leadSessionId": "cff978a1-9c44-49ca-9a12-57e71eab0346",
+  "members": [
+    {
+      "agentId": "team-lead@erd-docs-update",
+      "name": "team-lead",
+      "agentType": "team-lead",
+      "model": "claude-opus-4-6",
+      "joinedAt": 1772777785133,
+      "tmuxPaneId": "",
+      "cwd": "/Users/jude/projects/claude/linkadmin/linkbe",
+      "subscriptions": []
+    }
+  ]
+}
